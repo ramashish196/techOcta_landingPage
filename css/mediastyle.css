@@ -1,0 +1,27 @@
+@media (max-width: 50px) {
+  html {
+    font-size: 50%;
+  }
+  .navbar .nav-items,
+  .navbar .logo {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .row {
+    height: auto;
+    width: 100%;
+  }
+  .row .img-box,
+  .row .text-box {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .features .box {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+}

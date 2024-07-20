@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.header {
+  height: 95vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/benjamin-suter-ayrHsYZFXgg-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+html {
+  font-size: 62.5%;
+}
+.logo,
+.navbar a {
+  color: white;
+}
+/* .navbar{
+    border: 2px solid white; */
+
+.navbar .logo {
+  float: left;
+}
+.navbar .nav-items {
+  float: right;
+  margin: 1rem;
+}
+.navbar::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.navbar .nav-item {
+  display: inline-block;
+  text-transform: uppercase;
+  /* list-style: none; */
+  padding: 1rem;
+}
+ul li {
+  list-style: none;
+}
+a {
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+p,
+li {
+  font-size: 1.6rem;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.15em;
+}
+h1,
+h2,
+h3 {
+  font-weight: 500;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.15em;
+}
+.logo {
+  font-size: 2.5rem;
+}
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+.navbar a:hover {
+  border-bottom: 1px solid white;
+}
+.navbar a {
+  padding-bottom: 0.3rem;
+}
+/* utility class */
+.lg-head {
+  font-size: 2.5rem;
+}
+.md-head {
+  font-size: 1.6rem;
+}
+.text-red {
+  color: #e63946;
+}
+.text-light {
+  color: #f4f4f4;
+}
+.text-black {
+  color: #333;
+}
+.text-gray {
+  color: #555;
+}
+.header-content {
+  text-transform: uppercase;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.2));
+}
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  font-weight: 500;
+  margin: 0.5em 0;
+}
+.btn-main {
+  background-color: white;
+  border-radius: 10rem;
+}
+.btn-main:hover {
+  background-color: #fcf3f2;
+}
+/* section style */
+.section {
+  background: #ddd;
+  padding: 10rem 0;
+}
+
+/* features style  #############*/
+
+.features {
+  padding: 10rem 0;
+  background: white;
+}
+.box {
+  width: 33.333%;
+  float: left;
+  padding: 2rem;
+  text-align: center;
+}
+.box-wrap {
+  box-shadow: 5px 5px 20px #0000000e;
+}
+.box-wrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.box-1,
+.box-3 {
+  background-color: #333;
+  color: white;
+}
+.box-2 {
+  background-image: radial-gradient(
+    circle farthest-corner at 10.2% 55.8%,
+    rgba(252, 37, 103, 1) 0%,
+    rgba(250, 38, 151, 1) 46.2%,
+    rgba(186, 8, 181, 1) 90.1%
+  );
+  color: #fff;
+}
+
+/* footer style############## */
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+.socialsite i {
+  margin: 2rem;
+}
+/* abtpage################ */
+.abtpage {
+  background-color: #263238;
+  /* color: #fff; */
+}
+.container .about-heading {
+  border-bottom: 3px solid red;
+}
+.aboutpage {
+  padding: 2rem;
+}
+.abcde::after {
+  content: line;
+}
+.about-wraper {
+  text-align: center;
+  margin-top: 2rem;
+}
+.about-wraper li::before {
+  content: "\2713";
+  color: #e63946;
+  font-weight: bold;
+  padding: 1rem;
+}
+.about-wraper .left {
+  float: left;
+  width: 50%;
+}
+.about-wraper .right {
+  float: right;
+  width: 50%;
+}
+
+.about-wraper::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* #################cout styleing############# */
+.counts {
+  margin-top: 3rem;
+}
+.cout-item {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+.counts::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.cout-item span {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #e63946;
+}
+.cout-item p {
+  font-weight: 700;
+  color: grey;
+}
+/* ################ banner styling###########3333 */
+.banner {
+  background-image: radial-gradient(
+    circle farthest-corner at 10.2% 55.8%,
+    rgba(252, 37, 103, 1) 0%,
+    rgba(250, 38, 151, 1) 46.2%,
+    rgba(186, 8, 181, 1) 90.1%
+  );
+  color: #fff;
+  margin-top: 3rem;
+}
+.banner-left {
+  float: left;
+  width: 70%;
+}
+.banner-right {
+  float: right;
+  width: 30%;
+}
+.banner::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.pline {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 2rem;
+}
+.banner-btn {
+  text-align: center;
+  display: inline-block;
+  text-transform: uppercase;
+  border: 4px solid white;
+  padding: 0.3rem 1.5em;
+  margin-top: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  color: #fff;
+}
+/* ################ contact styling############## */
+.contact-form {
+  padding: 5rem 0;
+}
+
+.companyadd {
+  float: left;
+  width: 49%;
+  background: rgba(251, 233, 233, 0.868);
+  height: 600px;
+}
+.form {
+  float: right;
+  width: 49%;
+}
+.form-wraper::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.companyadd .addressg i {
+  display: inline-block;
+}
+.companyadd .addressg h1 {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+.companyadd img {
+  max-width: 20%;
+  min-height: 20%;
+  object-fit: cover;
+}
+/* ############## contact form styling####### */
+.form {
+  background: rgb(255, 242, 242);
+  font-size: 1rem;
+  height: 600px;
+}
+.form h1::after {
+  content: "";
+  display: block;
+  border: 3px solid rebeccapurple;
+  width: 100%;
+  box-sizing: border-box;
+}
+.form label {
+  display: block;
+}
+.form input {
+  padding: 0.5rem;
+  width: 100%;
+}
+.form .form-group label::after {
+  content: "*";
+  color: red;
+}
+.form .form-group textarea {
+  width: 100%;
+  padding: 1rem;
+}
+.form .btnn {
+  display: block;
+  margin: 0 auto;
+  padding: 0.5em 3em;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  background: #e63946;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+/* ################ Media Querry########### */
+@media (max-width: 50px) {
+  html {
+    font-size: 50%;
+  }
+  .nav-items,
+  .logo {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .row {
+    height: auto;
+    width: 100%;
+  }
+  .row1,
+  .row2 {
+    float: none;
+    display: block;
+  }
+  .img-box,
+  .text-box {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .box {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .box1,
+  .box-2,
+  .box-3 {
+    float: none;
+    display: block;
+  }
+}
